@@ -2,23 +2,24 @@
 
 
 #login-box {
-  position: relative;
-  margin: 20% auto;
-  width: 700px;
-  height: 400px;
+  margin: 30%,
+  top:300;
+  left: 700;
+ position:static;
+  height: 500px;
   background: #FFF;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .left {
-  position: absolute;
+  position: static;
   top: 0;
   left: 0;
   box-sizing: border-box;
   padding: 40px;
   width: 300px;
-  height: 400px;
+  height: 500px;
 }
 
 h1 {
@@ -29,17 +30,19 @@ h1 {
 
    font-size: 18px;
             font-weight: 700;
-            margin-bottom: 23px;
+           
             text-indent: 6px;
             letter-spacing: 7px;
             text-transform: uppercase;
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"],
+input[type="number"] {
   display: block;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 4px;
   width: 220px;
   height: 32px;
@@ -52,7 +55,9 @@ input[type="password"] {
 }
 
 input[type="text"]:focus,
-input[type="password"]:focus {
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
   border-bottom: 2px solid #4d041e;
   color: #4d041e;
   transition: 0.2s ease;
@@ -66,6 +71,7 @@ input[type="SUBMIT"] {
   text-transform: uppercase;
   transition: 0.1s ease;
   cursor: pointer;
+  margin-bottom: 15px;
 font-size: 12px;
 line-height: 42px;
 display: block;
@@ -106,8 +112,8 @@ input[type="SUBMIT"]:active {
 
 .or {
   position: absolute;
-  top: 180px;
-  left: 330px;
+  top: 600px;
+  left: 640px;
   width: 40px;
   height: 40px;
   background: #DDD;
@@ -119,12 +125,30 @@ input[type="SUBMIT"]:active {
 
 .right {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 450px;
+  right: 250px;
   box-sizing: border-box;
   padding: 40px;
   width: 300px;
-  height: 400px;
+  height: 500px;
   border-radius: 0 2px 2px 0;
 }
 
+
+
+ #error-form {
+  position:absolute;
+  top: 400px;
+  left: 550px;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+  font-family: 'Exo', sans-serif;
+  background: #5e0000;
+  width: 240px;
+  height: 35px;
+  color: white;
+    font-size:14px;
+  
+}
