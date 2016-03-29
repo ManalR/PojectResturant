@@ -1,17 +1,17 @@
 
 .login{
 	position: absolute;
-	top: calc(50% - 75px);
-	left: calc(43% - 50px);
+	top: calc(18% - 60px);
+	left: calc(80% - 50px);
 	height: 150px;
 	width: 350px;
 	padding: 10px;
 	z-index: 2;
 }
 
-.login input[type=text]{
-	width: 250px;
-	height: 30px;
+.login input[type=email]{
+	width: 240px;
+	height: 25px;
 	background: transparent;
 	border: 1px solid rgba(255,255,255,0.6);
 	border-radius: 3px;
@@ -20,11 +20,12 @@
 	font-size: 16px;
 	font-weight: 400;
 	padding: 4px;
+	margin-top: 10px;
 }
 
 .login input[type=password]{
-	width: 250px;
-	height: 30px;
+	width: 240px;
+	height: 25px;
 	background: transparent;
 	border: 1px solid rgba(255,255,255,0.6);
 	border-radius: 2px;
@@ -37,8 +38,8 @@
 }
 
 .login input[type=button]{
-	width: 260px;
-	height: 35px;
+	width: 247px;
+	height: 27px;
 	background: #fff;
 	border: 1px solid #fff;
 	cursor: pointer;
@@ -52,18 +53,18 @@
 }
 
 
-#box{
-	width: 250px;
+ #error-form {
+ 	font-family: 'Exo', sans-serif;
+	text-align: center;
+	background: #5e0000;
+	width: 240px;
 	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
+	border-radius: 3px 3px 0 0;
+	color: white;
+    font-size:14px;
+    padding: 4px;
 	margin-top: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -73,17 +74,13 @@
 	background: transparent;
 	color: #fff;
 	font-family: 'Exo', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	padding: 4px;
 	margin-top: 10px;
 }
 
 
-#box:focus{
-	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
-}
 
 .login input[type=button]:hover{
 	opacity: 0.8;
@@ -93,7 +90,7 @@
 	opacity: 0.6;
 }
 
-.login input[type=text]:focus{
+.login input[type= email]:focus{
 	outline: none;
 	border: 1px solid rgba(255,255,255,0.9);
 }
@@ -116,4 +113,220 @@
 }
 
 
+.styled-select {
+	 
+	  border:solid 1px #fff; 
+	    border: 1px solid rgba(250,255,255,0.6);
+	  overflow:hidden; 
+	  display:block; 
+	 width: 247px;
+	height: 30px; 
+	  margin-top: 10px;
+	  font-size:14px; /*use this to scale the select*/
+	}
 
+
+	.styled-select select {
+	  width:100%;
+	  font-size: 14px;
+	  height: 2em;
+	  margin: 0;
+	  background: transparent;
+	  color:#fff;
+	    border:#fff; 
+	  outline:none;
+	  display: inline-block;
+	  cursor:pointer;
+	font-family: 'Exo', sans-serif;
+	font-weight: 400;
+	}
+	
+	.styled-select select option {
+		background-color: #cecea0;
+	}
+
+	.styled-select .select-button {
+	  background-color:#cecea0;
+	  right:0; top:0;
+	  position:absolute;
+	  pointer-events:none;
+	  /*text-align: center; vertical-align: middle; */
+	  width: 2em; height: 1.9em;
+	}
+	
+
+	.small-arrow-down {
+		width: 0; 	
+		height: 0; 	 
+		border-left: .5em solid transparent; 
+		border-right: .5em solid transparent; 
+		border-top: .5em solid #fff; 
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		
+	}
+
+	.lt-ie10 .styled-select {
+		background: #fff;
+		border: none;
+	}
+	
+	.lt-ie10 .styled-select .select-button {
+		display: none;
+	}
+
+
+/*----------------------------- filter-------------------------*/
+
+
+.filt{
+	position: absolute;
+	top: calc(30% - 60px);
+	left: calc(10% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+}
+
+
+.filt input[type=button]{
+	width: 247px;
+	height: 27px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+
+.filt input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+
+
+
+
+/* cheakbox */
+
+
+
+
+.text {
+   width: 100%;
+   text-align: center;
+   margin-top: 15px;
+   height: 70px;
+}
+
+.area {
+   width: 100%;
+   float: left;
+   margin-top: 10px;
+}
+
+.area .input,
+.area .input label {
+   width: 100%;
+   float: left;
+   position: relative;
+}
+
+.area .input {
+   overflow: hidden;
+   border-radius: 2px;
+   color: #fff;
+  background-color: #26a69a;
+   box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+   transition: 300ms;
+   -webkit-transition: 300ms;
+   -ms-transition: 300ms;
+   left: calc(50% - 50px);
+}
+
+.area .input input {
+   display: none;
+}
+
+.area .input label {
+   font-weight: 400;
+   color: #fff;
+   text-align: center;
+   text-transform:uppercase;
+   cursor: pointer;
+   font-size: 14px;
+   z-index: 3;
+   transition: 300ms;
+   -webkit-transition: 300ms;
+   -ms-transition: 300ms;
+   height: 45px;
+   line-height: 45px;
+}
+
+.area .input:hover{
+   box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+}
+.area .input label:hover {
+   letter-spacing: .8px;
+   
+}
+
+.click-efect {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0.2);
+   border-radius: 50%;
+}
+
+.container {
+   width: 55%;
+   max-width: 800px;
+    position: absolute;
+   top:50%;
+   left:55%;
+   transform:translate(-50%,-50%);         
+   -webkit-transform:translate(-50%,-50%);
+   -ms-transform:translate(-50%,-50%);
+
+}
+
+.col-3 {
+   width: 25%;
+   float: left;
+   padding: 0 15px;
+}
+
+.row {
+   margin: 0 -15px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext);
+*,
+*:after,
+*::before {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+}
