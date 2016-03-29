@@ -7,12 +7,6 @@
      <link rel="shortcut icon" href="images/favicon.ico" />
      <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/signup.css">
-
-
-     <script type="text/javascript" src="js/signup.js">
-
-</script>
-     <script src= "js/signup.js"> </script>
      <script src="js/jquery.js"></script>
      <script src="js/jquery-migrate-1.1.1.js"></script>
      <script src="js/jquery.equalheights.js"></script>
@@ -92,18 +86,21 @@
 <div class="content"><div class="ic"></div>
      <div class="container_12">
     
-    <div class="grid_12">
+   <div class="grid_12">
         <h3 class="head1"> Sign Up </h3>
-    </div> <br> 
-
+        <div id= error-form>
+       The error message here
+       </div>
+     <br> 
+ 
 <div id="login-box">
   <div class="left">
     <h1>User</h1>
-    <form id=user  onsubmit='return formValidator()'>
-    <input type="text" name="name" id="name"   placeholder="Your name" />
-    <input type="text" name="email" id="email" placeholder="E-mail" />
-    <input type="password" name="pass" id="pass"   placeholder="Password" />
-    <input type="text" name="phone" id="phone" placeholder="Your phone number" />
+    <form id=user  >
+    <input type="text" name="name" id="name"  placeholder="Your name" required />
+    <input type="email" name="email" id="email" placeholder="E-mail" required />
+    <input type="password" pattern=".{8,}" required title="password shouldnot be less than 8" name="pass" id="pass"   placeholder="Password" required/>
+    <input type="number" name="phone"  id="phone" placeholder="Your phone number" />
     <br>
     <input class="button" type="SUBMIT" name="submit" value="Get Started" />
     </form>
@@ -112,12 +109,12 @@
 
   <div class="right">
     <h1>Seller<h1/>
-    <form id=seller  onsubmit='return formValidator2()'>
- <input type="text" name="username" id="username" placeholder="Your Username" />
- <input type="text" name="name"  id="name"  placeholder="Your name" />
-    <input type="text" name="email" id="email" placeholder="E-mail" />
-    <input type="password" name="pass" id="pass" placeholder="Password" />
-    <input type="text" name="phone" id="phone" placeholder="Your phone number" />
+    <form id=seller  >
+ <input type="text" name="username" maxlength="32" required title=" Username should be less than 32" id="username" placeholder="Your Username" required />
+ <input type="text" name="name"  id="name"  placeholder="Your name" required/>
+    <input type="email" name="email" id="email" placeholder="E-mail" required/>
+    <input type="password" pattern=".{8,}" required title="password shouldnot be less than 8" name="pass" id="pass" placeholder="Password" required />
+    <input type="number" name="phone" id="phone" placeholder="Your phone number" />
     <input class="button"  type="SUBMIT" name="submit2" value="Get Started" />
     </form>
   </div>
@@ -126,6 +123,7 @@
 </div>
 </div>
 </div>
+  </div>
   
 
 <!--==============================footer=================================-->
